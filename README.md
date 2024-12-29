@@ -17,26 +17,6 @@ Backend Tasks
         Create a Dockerfile that installs dependencies and runs FastAPI.
         Optionally create a docker-compose.yml with at least the backend service.
 
-Instructions (for LLMs or devs)
-
-    Create a new FastAPI app called app.py.
-    Add the /ping route returning "status": "ok".
-    Create a Dockerfile based on python:3.10-slim, install dependencies from requirements.txt, expose port 8000.
-
-Frontend Tasks
-
-    Initialize Frontend
-        Use React, Vue, or similar.
-        Create a minimal page with a “Ping server” button to test the backend.
-    API Call
-        On button click, call the /ping endpoint.
-        Display the JSON response on the page.
-
-Instructions (for LLMs or devs)
-
-    Create a React app via create-react-app.
-    Create a component PingTest.jsx that fetches from http://localhost:8000/ping and shows the result.
-
 End-of-Sprint Deliverable
 
     A running container (or local dev) with a minimal FastAPI backend and a React (or Vue) frontend that can ping the backend and display a response.
