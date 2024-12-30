@@ -12,3 +12,7 @@ typing_extensions==4.12.2
 uvicorn==0.34.0
 passlib==1.7.4
 bcrypt==3.2.2
+python-dotenv==1.0.0
+sqlalchemy==2.0.20
+python-multipart==0.0.6
+python-jose==3.3.0

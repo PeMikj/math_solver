@@ -1,14 +1,14 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from .database import init_db
-from .auth import router as auth_router
-from .problems import router as problems_router
+from app.database import init_db
+from app.auth import router as auth_router
+from app.problems import router as problems_router
 
 app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Adjust this to your frontend's URL in production
+    allow_origins=["http://localhost:3000"],  # Frontend's origin
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
